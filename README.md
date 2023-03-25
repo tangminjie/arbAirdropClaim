@@ -13,8 +13,8 @@ https://developer.arbitrum.io/node-running/running-a-node
 1. tasks claim
  使用ethers.js 转移代币 
 
-2. 使用合约转移代币
-   PermitAndCollector.sol 批量转移合约
-   permitSigClaim.js 712签名调用合约脚本
+2. 使用合约转移代币  
+   PermitAndCollector.sol 批量转移合约  
+   permitSigClaim.js 712签名调用合约脚本  
 
 
