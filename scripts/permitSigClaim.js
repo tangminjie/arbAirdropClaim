@@ -13,7 +13,7 @@ const privateKeys = process.env.PRIVATE_KEYS.split(",");
 const nonces = ["Nonce_Wallet_1", "Nonce_Wallet_2"]
   
 
-// 授权接收者的地址
+// 授权接收者的地址 这里应该授权给合约地址
 const spenderAddress = "Your_Spender_Addr";
 
 // 授权数量
